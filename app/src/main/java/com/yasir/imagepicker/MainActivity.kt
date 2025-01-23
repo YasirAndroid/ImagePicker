@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity(), ImagePickerCallback {
         findViewById<TextView>(R.id.openGalleryButton).setOnClickListener {
             imagePicker.requestGalleryPermission()
         }
+
+
     }
 
     override fun onImagePicked(uri: Uri, filePath: String?) {
