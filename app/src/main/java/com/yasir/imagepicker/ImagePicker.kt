@@ -29,6 +29,7 @@ class ImagePicker(
         initLaunchers()
     }
 
+
     private fun initLaunchers() {
         // Camera Launcher
         cameraLauncher = (activity as? androidx.activity.ComponentActivity)?.registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
